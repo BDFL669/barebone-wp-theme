@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    padding-top: 2vh;
+  }
+
+  .hero-image img {
+    width: 100%;
+    min-width: 500px;
+    max-width: 800px;
+    height: auto;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+  }
+  .hero-text button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #764ED2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 1s infinite alternate;
+  }
+
+  .hero-text button:hover {
+    animation: shake 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.10);
+    }
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1068px) {
+    /* Styles for screen width up to 1068px */
+    .hero-text {
+      padding-bottom: 150px;
+    }
+    .hero-text h2 {
+      font-size: 2.2rem;
+    }
+
+  }
+  @media (max-width: 768px) {
+    /* Styles for screen width up to 768px */
+    .hero-text h2 {
+      font-size: 2rem;
+    }
+
+  }
+.about-container {
+    min-width: 77vw;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #764ED2;
+    text-align: center;
+    overflow-x: hidden;
+    padding-bottom: 3vh;
+  }
+  
+  .about-container h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+    
+  }
+  
+  .about-container p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;    
+    text-align: center;
+  }
+  
+  .about-container button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+.about-container button:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+  
+.about-container button:focus {
+    outline: none;
+  }
+nav {
+    background-color: transparent;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+  }
+  
+  .nav-link {
+    float: right;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    position: relative; /* Add position relative */
+  }
+  
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #764ED2;
+    transition: width 0.5s ease; /* Transition the width property */
+  }
+  
+  .nav-link:hover:before {
+    width: 100%; /* Increase width to 100% on hover */
+  }
+  
+  .nav-link:hover {
+    color: #764ED2;
+  }
+
+  .nav-link.active {
+    color: #764ED2;
+  }
+  
+
+/*# sourceMappingURL=main.chunk.css.map*/
